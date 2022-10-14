@@ -17,7 +17,7 @@ int main(void)
 	}
 	else if (n == 0)
 	{
-		printf("%d Last digit of %d is 0 and is 0\n", n);
+		printf("Last digit of %d is %d and is 0\n", n);
 	}
 	else if (n < 6 && !0)
 	{
