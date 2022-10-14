@@ -13,11 +13,11 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 98)
 	{
-		printf("%d Last digit of n is greater than 5\n", n);
+		printf("Last digit of %d is 8 and is greater than 5\n", n);
 	}
 	else if (n == 0)
 	{
-		printf("%d Last digit of n is 0\n", n);
+		printf("Last digit of 980 is 0 and is 0\n", n);
 	}
 	else if (n < 6 && !0)
 	{
