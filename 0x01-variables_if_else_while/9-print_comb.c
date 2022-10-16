@@ -15,7 +15,11 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
+		else if (num == 60)
+		{
+			return (0);
+		}
 	putchar('\n');
-	return (null);
+	return (0);
 	}
 }
