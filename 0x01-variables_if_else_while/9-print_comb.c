@@ -8,7 +8,7 @@ int main(void)
 	int num;
 
 	for (num = 18; num < 28; num++)
-	
+	{
 		putchar(num);
 		if (num != 27)
 		{
@@ -19,5 +19,6 @@ int main(void)
 	putchar('\n');
 
 	return (0);
+	}
 	
 }
