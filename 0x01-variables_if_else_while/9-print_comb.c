@@ -14,9 +14,8 @@ int main(void)
 		{
 			putchar(',');
 			putchar(' ');
-			return (0);
+			return (null);
 		}
 	putchar('\n');
-	return (0);
 	}
 }
