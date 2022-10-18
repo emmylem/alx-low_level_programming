@@ -11,6 +11,8 @@ int main(void)
 	_putchar('m');
 	_putchar('q');
 	_putchar('j');
+	_putchar('i');
+	_putchar('s');
 	_putchar('\n');
 
 	return (0);
