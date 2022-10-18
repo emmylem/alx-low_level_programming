@@ -1,4 +1,4 @@
-#include "flox.h"
+#include "main.h"
 #include <unistd.h>
 /**
  * flox - Entry header

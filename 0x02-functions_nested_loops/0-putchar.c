@@ -1,4 +1,4 @@
-#include "flox.h"
+#include "main.h"
 /**
  * main - prints putchar and a new line
  * Return: 0
