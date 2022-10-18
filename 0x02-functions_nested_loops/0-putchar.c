@@ -9,6 +9,8 @@ int main(void)
 	_putchar('y');
 	_putchar('g');
 	_putchar('m');
+	_putchar('q');
+	_putchar('j');
 	_putchar('\n');
 
 	return (0);
