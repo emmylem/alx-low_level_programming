@@ -12,7 +12,6 @@ int _atoi(char *s)
 	int x = _atoi(str);
 
 	int sign = 1;
-	unsigned int num = 0;
 
 	while (!('0' <= *s && *s <= '9') && *s != '0')
 	{
