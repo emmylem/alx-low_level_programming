@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _atoi - converts a string to an integer
  * @s: string
@@ -23,5 +24,7 @@ int _atoi(char *s)
 		num = (num * 10) + (*s - '0');
 		s++;
 	}
+	printf("Hello ----- world\n");
+
 	return (num * sign);
 }
