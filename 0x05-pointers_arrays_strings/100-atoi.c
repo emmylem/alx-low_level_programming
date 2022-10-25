@@ -2,14 +2,14 @@
 #include <stdio.h>
 /**
  * _atoi - converts a string to an integer
- * @s: the string
+ * @str: string
  * Return: value
  */
 int _atoi(char *s)
 {
-	char s[] = "210";
+	char str[] = "210";
 
-	int x = _atoi(*s);
+	int x = _atoi(str);
 
 	printf("The number is %d\n", x);
 	return (0);
