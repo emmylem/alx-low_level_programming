@@ -9,8 +9,8 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int len;
-	char str1[] = "ABCDEFG";
-	char str2[] = "ABC";
+	char str1[] = "ABCDEFG45690";
+	char str2[] = "013";
 
 	len = _strspn(str1, str2);
 
