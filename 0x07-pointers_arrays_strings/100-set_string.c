@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * set_string - to set the value of pointer to string
+ * set_string - setting string to point
  * @s: pointer
- * @to: the char string to point to
- * Return: void
+ * @to: char to be pointed
+ * Return: void;
  */
 void set_string(char **s, char *to)
 {
