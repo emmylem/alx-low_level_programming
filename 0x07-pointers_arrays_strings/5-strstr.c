@@ -8,19 +8,21 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	char mainstr[40] = "Wow";
-	char substr[30] = " programme";
-	char result;
+	int point;
 
-	result = *_strstr(mainstr, substr);
-	if (result)
+	for (; *haystack; haystack++)
 	{
-		printf("string is present");
-		printf("\nRemaining is %d", result);
+		for (point = 0; needle[point]; point++)
+		{
+			if (!(*(haystack + point)))
+			{
+				return (NULL);
+			}
+			if (*(haystack + point) != needle[point])
+				break;
+		}
+		if (needle[point] == '\0')
+			return (haystack);
 	}
-	else
-	{
-		printf("string is absengt");
-	}
-	return (0);
+	return (NULL);
 }
