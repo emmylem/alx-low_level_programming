@@ -8,14 +8,21 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int len;
-	char str1[] = "ABCDEFG45690";
-	char str2[] = "013";
+	int i = 0;
+	int j = 0;
 
-	len = _strspn(str1, str2);
-
-	printf("length %d\n", len);
-
+	for (; s[i]; i++)
+	{
+		for (j = 0; accept[j]; j++)
+		{
+			if (s[i] == accept[j])
+			{
+				break;
+			}
+		}
+		if (s[i] != accept[j])
+			break;
+	}
 	return (0);
 }
 
