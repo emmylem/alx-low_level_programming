@@ -17,6 +17,6 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return (n * is_prime_number(n, i - 1));
+	return ((n % 100) + is_prime_number(n / 10));
 	return (0);
 }
