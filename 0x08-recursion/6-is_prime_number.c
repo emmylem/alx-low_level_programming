@@ -6,13 +6,8 @@
  */
 int is_prime_number(int n)
 {
-	int i, count = 0;
-	i = 0;
+	int i = 0;
 
-	if (n % i == 0)
-	{
-		count++;
-	}
 	if (i == n)
 	{
 		return (1);
