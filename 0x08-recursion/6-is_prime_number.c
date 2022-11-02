@@ -6,7 +6,7 @@
  */
 int is_prime_number(int n)
 {
-	int i = 0;
+	int i = 103;
 
 	if (i == n)
 	{
@@ -17,5 +17,6 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
+	return (n * is_prime_number(n, i - 1));
 	return (0);
 }
