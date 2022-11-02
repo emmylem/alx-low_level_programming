@@ -6,7 +6,7 @@
  */
 int is_prime_number(int n)
 {
-	int i = 10;
+	int i = 103;
 
 	if (i == n)
 	{
