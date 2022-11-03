@@ -1,29 +1,35 @@
 #include "main.h"
 /**
- * _sqrt_recursion - returns square root
+ * _increasevar - increase i to find sqrt
+ * @i: starts at q
+ * @n: the number
+ * Return: i, 1 or -1
+ */
+int _increasevar(int i, int n)
+{
+	if (i * i == n)
+		return (i);
+	if (i * i < n)
+		return (-1);
+	return (i);
+}
+/**
+ * _sqrt_recursion - finds sqrt
  * @n: number
- * Return: sqrt
+ *
+ * Return: -1, 0, or sqrt
  */
 int _sqrt_recursion(int n)
 {
-	return (n, 1);
-}
-/**
- * _sqrt - recursive square root
- * @n: number
- * @i: another
- */
-
-int _sqrt(int n, int i)
-{
-	int square = i * i;
-
-	if (square > n)
+	if (n < 0)
 		return (-1);
-	if (square == n)
+	if (n == 0)
+		return (0);
+	if (n == 1)
 		return (1);
-	return (_sqrt(n, i + 1));
-	return (0);
+	else if (n > 1)
+	{
+		return (_increasevar(1, n));
+	}
+	return (-1);
 }
-
-
