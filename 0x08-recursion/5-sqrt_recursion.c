@@ -10,6 +10,8 @@ int _increasevar(int i, int n)
 	if (i * i == n)
 		return (i);
 	if (i * i < n)
+		return (_increasevar(i + 1, n));
+	if (i * i > n)
 		return (-1);
 	return (i);
 }
