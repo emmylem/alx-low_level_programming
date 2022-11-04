@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 	int result = 0, x, i, j, k;
 
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	for (k = 0; k < argc; k++)
+	for (k = 1; k < argc; k++)
 	{
 		x = atoi(argv[k]);
 		result += x;
