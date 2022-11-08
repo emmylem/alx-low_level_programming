@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 
 int word_count(char *str);
 char *first_word(char *str);
@@ -13,8 +14,8 @@ char *first_word(char *str);
  */
 char **strtow(char *str)
 {
-	char **strarr
-		int word, count, letter;
+	char **strarr;
+	int word, count, letter;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
@@ -25,7 +26,7 @@ char **strtow(char *str)
 	if (!strarr)
 		return (NULL);
 
-	for (counter = 0; count <= word;)
+	for (count = 0; count <= word;)
 	{
 		strarr[count] = (NULL);
 		count++;
@@ -33,8 +34,7 @@ char **strtow(char *str)
 	count = 0;
 	word = 0;
 	letter = 0;
-
-	while (str[count] != '\0')
+		while (str[count] != '\0')
 	{
 			if (str[count] != ' ' && !letter)
 			{
@@ -54,24 +54,25 @@ char **strtow(char *str)
 				letter = 0;
 	count++;
 	if (!word)
-		return (NULL);
-	return (strarr);
-
-	xif (str[word] != ' ' && !letter)
 	{
-		str[count] = first_word(str + count);
+		return (NULL);
+	}
+	return (strarr);
+	if (str[word] != ' ' && !letter)
+	{
+		strarr[count] = first_word(str + count);
 		if (!strarr[count])
 		{
 			word--;
 			while (word >= 0)
-				free(*(sterarr + word--));
+				free(*(strarr + word--));
 			free(strarr);
 			return (NULL);
 		}
 		word++;
 		letter = 1;
 	}
-	else if (str[count] == ' ' && letter)
+	if (str[count] == ' ' && letter)
 		letter = 0;
 	count++;
 	}
@@ -126,7 +127,6 @@ char *first_word(char *str)
 	{
 		return (NULL);
 	}
-	
 	word[count] = '\0';
 	count--;
 
