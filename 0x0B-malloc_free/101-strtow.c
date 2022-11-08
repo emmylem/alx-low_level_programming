@@ -54,9 +54,7 @@ char **strtow(char *str)
 				letter = 0;
 	count++;
 	if (!word)
-	{
 		return (NULL);
-	}
 	return (strarr);
 	if (str[word] != ' ' && !letter)
 	{
@@ -72,7 +70,7 @@ char **strtow(char *str)
 		word++;
 		letter = 1;
 	}
-	if (str[count] == ' ' && letter)
+	else if (str[count] == ' ' && letter)
 		letter = 0;
 	count++;
 	}
