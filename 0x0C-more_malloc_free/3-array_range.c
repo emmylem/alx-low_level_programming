@@ -25,9 +25,10 @@ int *array_range(int min, int max)
 	}
 	count = 0;
 
-	for (count = 0; count = (min <= max); count++)
+	while (min <= max)
 	{
 		bam[count] = min;
+		count++;
 		min++;
 	}
 	return (bam);
