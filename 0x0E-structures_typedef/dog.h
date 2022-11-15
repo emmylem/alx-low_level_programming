@@ -7,7 +7,7 @@
  * @owner: char type
  * Description:struct to store dog info
  */
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
