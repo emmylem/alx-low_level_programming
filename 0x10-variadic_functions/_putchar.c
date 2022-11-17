@@ -1,6 +1,6 @@
 #include <unistd.h>
 /**
- * _puchar - writes to stdout
+ * _putchar - writes to stdout
  * @c: char
  * Return: 1
  */
