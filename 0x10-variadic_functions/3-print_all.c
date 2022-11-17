@@ -42,7 +42,7 @@ void print_all(const char * const format, ...)
 				i++;
 				continue;
 		}
-		check = 1;
+		check = 1, i++;
 	}
 	putchar('\n');
 	va_end(vl);
