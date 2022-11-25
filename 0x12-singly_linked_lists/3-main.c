@@ -31,14 +31,14 @@ int main(void)
 	add_node_end(&head, "Max");
 	add_node_end(&head, "Michael");
 	add_node_end(&head, "Ntuj");
-	add_node(&head, "Philip");
-	add_node(&head, "Richard");
-	add_node(&head, "Samantha");
-	add_node(&head, "Stuart");
-	add_node(&head, "Swati");
-	add_node(&head, "Timothy");
-	add_node(&head, "Victor");
-	add_node(&head, "Walton");
+	add_node_end(&head, "Philip");
+	add_node_end(&head, "Richard");
+	add_node_end(&head, "Samantha");
+	add_node_end(&head, "Stuart");
+	add_node_end(&head, "Swati");
+	add_node_end(&head, "Timothy");
+	add_node_end(&head, "Victor");
+	add_node_end(&head, "Walton");
 	print_list(head);
 	return (0);
 }
