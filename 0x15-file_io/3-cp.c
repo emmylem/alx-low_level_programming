@@ -11,7 +11,7 @@
 int main(int argc, char **argv)
 {
 	int fp, fp2, filecheck;
-	char buffer[1000];
+	char buffer[1024];
 
 	if (argc != 3)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 	fp2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fp2 == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
-	while ((filecheck = read(fp, buffer, 1000)) > 0)
+	while ((filecheck = read(fp, buffer, 1024)) > 0)
 	{
 		if (filecheck == -1)
 		{
@@ -38,7 +38,7 @@ int main(int argc, char **argv)
 			exit(99);
 		}
 	}
-	if (filecheck == 1)
+	if (filecheck == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
