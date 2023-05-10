@@ -14,5 +14,10 @@ int exponential_search(int *array, size_t size, int value);
 int advanced_binary(int *array, size_t size, int value);
 void search(int *array, int one, int two);
 int binary_search_recursive(int *array, int left, int right, int value);
+int min(int x, int y);
+int _binary_search_recursive(int *array, int left, int right, int value);
+int advanced_binary(int *array, size_t size, int value);
+int b_search_recursive(int *array, int left, int right, int value);
+void p_search(int *array, int one, int two);
 
 #endif
